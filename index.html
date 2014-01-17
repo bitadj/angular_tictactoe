@@ -1,8 +1,31 @@
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-text
-</body>
+ 
+
+<html x-ng-app="">
+	<head>
+<!-- 		<link rel="stylesheet" type="text/css" href="css/normalize.css"> -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.min.js"></script>
+		
+		<title>TicTacToe</title>
+	</head>
+
+	<body>
+		<h2>TicTacToe</h2>
+
+
+		<div x-ng-init="cells=['rb','rb','b','rb','rb','b','r','r','']; xTurn={val:false}">
+
+			<div x-ng-repeat="c in cells track by $index" 
+				x-ng-class="{cell:true, clear:($index%3==0), rightB:($index%3==0)}"
+				x-ng-click="cells[$index] = (
+					cells[$index]=='' ? (
+						(xTurn.val = !xTurn.val) ? 'x' : 'o')
+					: cells[$index]);">{{c}}
+			</div>
+
+		</div>
+
+
+	</body>
 </html>
