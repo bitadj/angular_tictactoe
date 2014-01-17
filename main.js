@@ -1,4 +1,18 @@
+function ticTacCtrl ($scope) {
+	//blank gameboard array
+	$scope.cells = [['','',''],['','',''],['','','']]; 
+	$scope.xTurn={val:false};
 
+	$scope.takeTurn = function(i, j) {
+		// angular.forEach($scope.cells)
+		$scope.cells[i][j] = ($scope.cells[i][j]=='' ? (($scope.xTurn.val = !$scope.xTurn.val) ? 'X' : 'O'): $scope.cells[i][j]);
+	}; //close takeTurn function
+
+
+}; //close  ticTacCtrl function
+
+
+// old javascript from week one
 // var turn = 0;
 
 

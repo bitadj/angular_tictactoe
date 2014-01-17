@@ -14,13 +14,14 @@ body {
 }
 
 .cell {
-	margin: 3px;
 	float: left;
 	width: 150px;
 	height: 150px;
-/*	border: 8px solid #EDEDED;*/
+	border: 8px solid #EDEDED;
 	text-align: center;
 }
+
+
 
 .rightB {
 	border-right: 8px solid #EDEDED;
