@@ -1,7 +1,7 @@
 body {
 	background-color: #3b653d;
 	font-family: 'Covered By Your Grace', cursive;
-	font-size: 2em;
+	font-size: 3em;
 	color: #EDEDED;
 	-webkit-user-select: none;  
 	-moz-user-select: none;    
@@ -17,8 +17,8 @@ body {
 	float: left;
 	width: 150px;
 	height: 150px;
-/*	border: 8px solid #EDEDED;*/
 	text-align: center;
+	font-size: 2em;
 }
 
 
